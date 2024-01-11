@@ -25,9 +25,7 @@ body {
     font-family: 'Mulish', sans-serif;
     color: var(--light-color-1);
     background-image: var(--background);
-}
-
-body {
+    
     display: grid;
     grid-template-areas:
         "head nav designs"
