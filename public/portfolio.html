@@ -14,135 +14,53 @@
   <h1>Cooper Kuglin</h1>
 </head>
 
-<body id="portfolio">
-  <style type="text/css">
-    .parallaxParent {
-      height: 100vh;
-      overflow: hidden;
-    }
-
-    .parallaxParent>* {
-      height: 200%;
-      position: relative;
-      top: -100%;
-    }
-  </style>
-  <div class="spacer s0"></div>
-  <div id="parallax1" class="parallaxParent">
-    <div style="background-image: url(images/2022Me.png);"></div>
-  </div>
-  <div class="spacer s1">
-    <div class="box2 blue">
-      <p>Content 1</p>
-      <a href="#" class="viewsource">view source</a>
-    </div>
-  </div>
-  <div class="spacer s0"></div>
-  <div id="parallax2" class="parallaxParent">
-    <div style="background-image: url(images/2022Me.png);"></div>
-  </div>
-  <div class="spacer s1">
-    <div class="box2 blue">
-      <p>Content 2</p>
-      <a href="#" class="viewsource">view source</a>
-    </div>
-  </div>
-  <div class="spacer s0"></div>
-  <div id="parallax3" class="parallaxParent">
-    <div style="background-image: url(images/2022Me.png);"></div>
-  </div>
-  <div class="spacer s2"></div>
-  <script>
-    // init controller
-    var controller = new ScrollMagic.Controller({
-      globalSceneOptions: {
-        triggerHook: "onEnter",
-        duration: "200%"
-      }
-    });
-
-    // build scenes
-    new ScrollMagic.Scene({
-        triggerElement: "#parallax1"
-      })
-      .setTween("#parallax1 > div", {
-        y: "80%",
-        ease: Linear.easeNone
-      })
-      .addIndicators()
-      .addTo(controller);
-
-    new ScrollMagic.Scene({
-        triggerElement: "#parallax2"
-      })
-      .setTween("#parallax2 > div", {
-        y: "80%",
-        ease: Linear.easeNone
-      })
-      .addIndicators()
-      .addTo(controller);
-
-    new ScrollMagic.Scene({
-        triggerElement: "#parallax3"
-      })
-      .setTween("#parallax3 > div", {
-        y: "80%",
-        ease: Linear.easeNone
-      })
-      .addIndicators()
-      .addTo(controller);
-  </script>
-  <nav>
+<body>
+  <nav id="nav">
     <ul>
       <li><a href="index.html">About</a></li>
       <li><a href="portfolio.html">Portfolio</a></li>
       <li><a href="resume.html">Resume</a></li>
     </ul>
   </nav>
+
+  <nav id="designs">
+    <ul>
+      <li id="red-to-blue">Red to Blue</li>
+      <li id="moonlight-mint">Moonlight Mint</li>
+      <li id="luscious-green">Luscious Green</li>
+    </ul>
+  </nav>
   <main>
     <h1>Portfolio</h1>
     <ul id="portfolioItems">
       <li>
-        <h2><a href="Projecto1">Project Name1</a></h2>
-        <img src="Project1.png" />
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Suspendisse potenti nullam ac tortor vitae purus. Suscipit adipiscing bibendum est ultricies
-          integer quis auctor elit sed. Aliquet risus feugiat in ante metus dictum at tempor. Sit amet commodo nulla
-          facilisi nullam vehicula ipsum a. Lectus sit amet est placerat. Diam volutpat commodo sed egestas egestas.
-          Arcu ac tortor dignissim convallis aenean. Blandit volutpat maecenas volutpat blandit aliquam etiam. Nisl
-          tincidunt eget nullam non nisi est sit. Mattis rhoncus urna neque viverra. Vestibulum lorem sed risus
-          ultricies tristique nulla. Velit egestas dui id ornare arcu odio ut sem nulla. Et pharetra pharetra massa
-          massa ultricies mi quis hendrerit. Erat nam at lectus urna duis convallis convallis tellus id. A scelerisque
-          purus semper eget duis. Feugiat in ante metus dictum at tempor commodo. Tempus imperdiet nulla malesuada
-          pellentesque elit eget. Morbi tincidunt augue interdum velit.
+        <h2>Webpage Maze</h2>
+        <img src="images/Webpage-Maze.PNG" alt = "the main page of Webpage Maze" id="Webpage_Maze" />
+        <p>This project was started in December 2023, and was made with Brayden Noble. The site consists of several
+          websites connected together through maze-like and convoluted paths. It was implemented using a combination of
+          HTML, CSS, and Javascript, as well as a mock using Figma.
         </p>
       </li>
-      <h2><a href="Projecto2">Project Name2</a></h2>
-      <img src="Project2.png" />
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Suspendisse potenti nullam ac tortor vitae purus. Suscipit adipiscing bibendum est ultricies
-        integer quis auctor elit sed. Aliquet risus feugiat in ante metus dictum at tempor. Sit amet commodo nulla
-        facilisi nullam vehicula ipsum a. Lectus sit amet est placerat. Diam volutpat commodo sed egestas egestas.
-        Arcu ac tortor dignissim convallis aenean. Blandit volutpat maecenas volutpat blandit aliquam etiam. Nisl
-        tincidunt eget nullam non nisi est sit. Mattis rhoncus urna neque viverra. Vestibulum lorem sed risus
-        ultricies tristique nulla. Velit egestas dui id ornare arcu odio ut sem nulla. Et pharetra pharetra massa
-        massa ultricies mi quis hendrerit. Erat nam at lectus urna duis convallis convallis tellus id. A scelerisque
-        purus semper eget duis. Feugiat in ante metus dictum at tempor commodo. Tempus imperdiet nulla malesuada
-        pellentesque elit eget. Morbi tincidunt augue interdum velit.
+      <h2>JOUST Recreation</h2>
+      <img src="images/JOUST.png" alt = "screenshot of a recreation of JOUST" id="JOUST" />
+      <p>Joust is an action game developed by Williams Electronics and released in arcades in 1982. Our recreation was
+        made in October of 2022, and was made by a team consisting of myself, Bryce Tekulve, and Eric Bender. Our
+        recreation was made in Java through Eclipse. It implimented the main ascpects of the game, suchas 2 players,
+        enemies that follow and hurt players, platforms, and enemies turning into eggs upon death.
       </p>
       </li>
-      <h2><a href="Projecto3">Project Name3</a></h2>
-      <img src="Project3.png" />
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Suspendisse potenti nullam ac tortor vitae purus. Suscipit adipiscing bibendum est ultricies
-        integer quis auctor elit sed. Aliquet risus feugiat in ante metus dictum at tempor. Sit amet commodo nulla
-        facilisi nullam vehicula ipsum a. Lectus sit amet est placerat. Diam volutpat commodo sed egestas egestas.
-        Arcu ac tortor dignissim convallis aenean. Blandit volutpat maecenas volutpat blandit aliquam etiam. Nisl
-        tincidunt eget nullam non nisi est sit. Mattis rhoncus urna neque viverra. Vestibulum lorem sed risus
-        ultricies tristique nulla. Velit egestas dui id ornare arcu odio ut sem nulla. Et pharetra pharetra massa
-        massa ultricies mi quis hendrerit. Erat nam at lectus urna duis convallis convallis tellus id. A scelerisque
-        purus semper eget duis. Feugiat in ante metus dictum at tempor commodo. Tempus imperdiet nulla malesuada
-        pellentesque elit eget. Morbi tincidunt augue interdum velit.
+      <h2>Labrynth</h2>
+      <img src="images/Labrynth_Recreation.png" alt = "screenshot recreation of a personal project/Labrynth" id="Labrynth" />
+      <p>Labrynth was a personal project that involved the user controlling a yellow circle through a randomly generated
+        maze. Once the circle reached the end, a new maze of harder dificulty would be generated. This was made using
+        QBasic, and the way a maze was generated was using the paint comamnds. First, red bars would be drawn in a
+        criss-cross pattern as shown, creating black squares. Then random sections between the black squares were
+        removed. Finally, the program would have to check whether the maze generated can be copmleted. Since
+        QBasic is basic, methods for checking this was difficult to formulate. How I went about it was utilizing the
+        paint command. This command would fill the black area with blue, starting at the beginning spot, and then I
+        would have the program chack whether this paint had reached the end spot. If the spot was black, a new maze
+        needed to be generated. If not, the player was placed in the beginning spot and was left to control it.
+        Unfortunatly, the drive it was stored on was wiped, so I had to recreate an image of it.
       </p>
       </li>
     </ul>
